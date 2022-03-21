@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --orange: #ff9900;
+    --gray: #999999;
+    --gray-light:#f8f9fa;
+    --gray-dark: ##4a4a4b;
+    --gren: ##a2c0be;
+    --shadow-img: 10px 10px #a2c0be;
+
+
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.container {
+    width: 60%;
+    margin: auto;
+}
+ /**
+ * HEADER
+ */
+
+ header {
+    background-color: var(--gray-light);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color:var(--gray);
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--orange);
+
+
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+header section img {
+    width: 35%;
+}
+header section h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: lighter;
+}
+header section p {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: lighter;
+    color: var(--gray);
+}
+main section:not(:first-child) {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    align-items: center;
+    text-align: right ;
+    margin: 100px 0;
+    
+}
+.welcome {
+    text-align: center;
+    margin: 65px auto; /* Permet d'appliquer des marges sur les côtés de façon égale */
+    width: 43%;
+   
+}
+.welcome h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;    
+    }
+
+    .welcome p {
+        margin: 0;
+        font-weight: lighter;
+        color: var(--gray);
+
+    }
+main section img {
+    width: 50%;
+    height: 40%;
+    object-fit: cover;
+    /*
+    *valeurs attendues de "box-shadow"
+    * Dépalcement sur la droite/gauche, déplacemnet vers le bas/haut, flou et la couleur
+    *valeur positive vers la droite ou le bas
+    *valeur négative vers la gauche ou le haut
+    */
+    box-shadow: 10px 10px #a2c0be;
+}
+main section h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: normal;
+    transition: all 500ms;
+    
+}
+
+main section p {
+    color: var(--gray);
+    margin-bottom: 50px;
+}
+main section:nth-child(3) {
+    text-align: left;
+}
+
+.btn {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--gray);
+    padding: 12px 32px;
+    border-radius: 50px;
+    letter-spacing: 0.2rem;
+    transition: all 500ms;
+
+}
+.btn:hover {
+    background-color: var(--black);
+}
+
+
+
+footer {
+    color: var(--white);
+    background-color: var(--gray-dark);
+    justify-content: space-between;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 50px 0;
+}
